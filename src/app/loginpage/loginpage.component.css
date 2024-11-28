@@ -1,0 +1,76 @@
+/* Styles for the parent div */
+.parent {
+    display: flex;
+    justify-content: center;  /* Center the form horizontally */
+    align-items: center;      /* Center the form vertically */
+    min-height: 100vh;        /* Full viewport height */
+    background-color: #f4f7fa; /* Light background color */
+  }
+  
+  /* Styles for the form container */
+  form {
+    background-color: #464e4e; /* White background for the form */
+    padding: 2rem;            /* Padding around the form */
+    border-radius: 8px;       /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 100%;
+    max-width: 400px;         /* Maximum width of the form */
+  }
+  
+  /* Styling for form labels */
+  label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;  /* Space between label and input */
+    color: #1062dd;           /* Darker color for the label */
+  }
+  
+  /* Styling for the form inputs */
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;            /* Make inputs fill the form */
+    padding: 0.8rem;        /* Padding inside the input fields */
+    margin-bottom: 1rem;    /* Space between inputs */
+    border: 1px solid #ccc; /* Border color for the input fields */
+    border-radius: 4px;     /* Rounded corners for the inputs */
+    font-size: 1rem;       /* Font size inside inputs */
+  }
+  
+  /* Focus state for inputs */
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #c06b25;  /* Green border on focus */
+    outline: none;          /* Remove the default blue outline */
+  }
+  
+  /* Styles for the submit button */
+  button {
+    width: 100%;             /* Make the button fill the form */
+    padding: 1rem;           /* Padding inside the button */
+    background-color: #90921c; /* Green background color */
+    color: white;            /* White text color */
+    border: none;            /* Remove default border */
+    border-radius: 4px;      /* Rounded corners for the button */
+    font-size: 1.1rem;       /* Font size for the button text */
+    cursor: pointer;        /* Change cursor to pointer on hover */
+    transition: background-color 1s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Hover effect for the button */
+  button:hover {
+    background-color: #321e8f; /* Darker green on hover */
+  }
+  
+  /* Disabled button style */
+  button:disabled {
+    background-color: #4e4848;   /* Gray color for disabled button */
+    cursor: not-allowed;      /* Change cursor to indicate it's disabled */
+  }
+  
+  /* Error messages */
+  small {
+    color: rgb(43, 163, 184);  /* Red text for error messages */
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 0.5rem;
+  }
