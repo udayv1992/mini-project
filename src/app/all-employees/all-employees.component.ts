@@ -10,7 +10,7 @@ export class AllEmployeesComponent {
     employees:any = [];
   constructor(private _employeeService:AllEmployeeService){
     _employeeService.getEmployees().subscribe(
-      (data:any)=>{
+  (data:any)=>{
         this.employees = data;
       },
       (err:any)=>{
