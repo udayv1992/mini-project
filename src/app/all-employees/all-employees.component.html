@@ -1,0 +1,33 @@
+<table class="table table-dark table-stripped table-bordered">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>company</th>
+            <th>role</th>
+            <th>package</th>
+            <th>email</th>
+            <th>dob</th>
+            <th>workmode</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.id}}</td>
+            <td>{{employee.name}}</td>
+            <td>{{employee.company}}</td>
+            <td>{{employee.role}}</td>
+            <td>{{employee.package}}</td>
+            <td>{{employee.email}}</td>
+            <td>{{employee.dob}}</td>
+            <td>{{employee.workmode}}</td>
+            <!-- <button (click)="delete(employee.id)" class="btn btn-danger">Delete</button> -->
+        </tr>
+    </tbody>
+</table>
+            
+
+            
+            
+

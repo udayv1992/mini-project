@@ -1,0 +1,28 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    
+    
+}
+.left{
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    overflow: auto;
+   
+}
+.right{
+   
+    width: 70%;
+    height: 100%;
+    background-color: rgb(46, 141, 141);
+    overflow: auto;
+}
+hr{
+    margin-left: -10px;
+    margin-right: -10px;
+    border:1px solid blue;
+}

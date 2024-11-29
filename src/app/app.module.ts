@@ -9,6 +9,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { CreateEmployeeComponent } from './create-employee/create-employee.component';
+import { AllEmployeesComponent } from './all-employees/all-employees.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CreateEmployeeComponent } from './create-employee/create-employee.compo
     LoginpageComponent,
     DashboardComponent,
     HomeComponent,
-    CreateEmployeeComponent
+    CreateEmployeeComponent,
+    AllEmployeesComponent
   ],
   imports: [
     BrowserModule,

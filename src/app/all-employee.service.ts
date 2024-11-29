@@ -5,11 +5,12 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class LoginpageService {
+export class AllEmployeeService {
 
   constructor(private _httpClient:HttpClient) { }
-  login(data:any):Observable<any>{
-    return this._httpClient.post("https://reqres.in/api/login",data);
+  getEmployees():Observable<any>{
+    return this._httpClient.get("https://6572df5d192318b7db412dfe.mockapi.io/employees");
+ 
   }
-
+   
 }

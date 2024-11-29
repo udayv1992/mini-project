@@ -21,7 +21,7 @@ export class LoginpageComponent {
       (data:any)=>{
         alert("Login Success");
         // go to dashboard
-        // this._router.navigateByUrl("/dashboard");
+        this._router.navigateByUrl("/dashboard");
         // store token
         sessionStorage.setItem('token',data.token);
       },
@@ -30,4 +30,7 @@ export class LoginpageComponent {
       }
     )
   }
+  // logout(){
+  //   this._router.navigateByUrl("/login");
+  // }
 }
